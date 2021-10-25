@@ -1,0 +1,18 @@
+<h2>Users</h2>
+A total of <%= User.count %> users.
+<table>
+    <tr>
+        <th>User ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Admin</th>
+    </tr>
+    <% @users.each do |user| %>
+        <tr>
+            <td><%= user.id %></td>
+            <td><%= user.username %></td>
+            <td><%= user.email %></td>
+            <td><% if user.admin %>True<%else%>False<% end %></td>
+        </tr>
+    <% end %>
+</table>

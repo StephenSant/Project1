@@ -1,0 +1,74 @@
+body
+{
+    margin: 0;
+}
+
+h1
+{
+    background-color: black;
+    padding: 15px;
+    font-size: 55px;
+    margin: 0;
+}
+
+h1 a 
+{
+    text-decoration: none;
+    color:white;
+}
+
+nav
+{
+    background-color: rgb(148, 148, 148);
+    padding: 5px 15px;
+    color:white;
+    text-decoration: none;
+}
+
+nav *
+{
+    color:white;
+    text-decoration: none;
+}
+
+div.container
+{
+    margin: 15px;
+}
+
+table 
+{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th 
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+div.shop
+{
+    background-color: rgb(224, 224, 224);
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+div.shop h3
+{
+    margin: 5px 0;
+}
+
+div.shop p
+{
+    margin: 5px 0;
+}
+
+a.shop
+{
+    text-decoration: none;
+    color: black;
+}
