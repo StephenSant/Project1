@@ -10,15 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_24_235117) do
+ActiveRecord::Schema.define(version: 2021_10_26_021908) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "shop_groups", force: :cascade do |t|
-    t.integer "user_id"
+  create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "line_items", force: :cascade do |t|
+    t.integer "quantity", default: 1
+    t.integer "product_id"
+    t.integer "cart_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "order_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.text "address"
+    t.string "pay_method"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.text "product_name"
+    t.boolean "released"
+    t.string "released_date"
+    t.text "description"
+    t.decimal "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "shop_id"
   end
 
   create_table "shops", force: :cascade do |t|
@@ -40,11 +68,11 @@ ActiveRecord::Schema.define(version: 2021_10_24_235117) do
 
   create_table "users", force: :cascade do |t|
     t.text "email"
+    t.text "username"
+    t.text "password_digest"
+    t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "password_digest"
-    t.boolean "admin"
-    t.text "username"
   end
 
   add_foreign_key "shops_users", "shops"

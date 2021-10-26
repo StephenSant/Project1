@@ -1,8 +1,17 @@
 <h2><%= @shop.shop_name %></h2>
 <small>Created: <%=@shop.created_at.day%>/<%=@shop.created_at.month%>/<%=@shop.created_at.year%></small>
 <p>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<b>Users</b>
 <% @shop.users.each do |user| %>
-<ul>
 <li><%= link_to user.username, ('/users/'+(user.id).to_s) %></li>
-</ul>
+<% end %>
+<% @shop.products.each do |product| %>
+    <a href = '/products/<%= product.id %>', class = 'product'>
+        <div class = 'product'>
+            <h3><%= product.product_name %></h3>
+            <h4><%= product.shop.shop_name %></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+            <img src = 'https://via.placeholder.com/150'>
+        </div>
+    </a>
 <% end %>

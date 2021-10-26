@@ -13,8 +13,13 @@ h1
 
 h1 a 
 {
-    text-decoration: none;
     color:white;
+}
+
+a
+{
+    text-decoration: none;
+    color:black;
 }
 
 nav
@@ -67,8 +72,19 @@ div.shop p
     margin: 5px 0;
 }
 
-a.shop
+div.product
 {
-    text-decoration: none;
-    color: black;
+    background-color: rgb(224, 224, 224);
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+div.product h3
+{
+    margin: 5px 0;
+}
+
+div.product p
+{
+    margin: 5px 0;
 }
