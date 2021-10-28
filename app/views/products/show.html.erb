@@ -10,7 +10,7 @@
         <img src = 'https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' height = '75px' > 
     </div>
     <div>
-        <h4><%= review.user.username %></h4>
+        <h4><a href = <%= user_path(review.user.id) %>><%= review.user.username %></a></h4>
         <p><%= review.content %></p>
         <small>Posted: XX/XX/XXXX</small>
     </div>

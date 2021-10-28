@@ -31,7 +31,7 @@ Review.destroy_all
 r0 = Review.create :content =>"Is good.", :user => u1, :product => p0
 r1 = Review.create :content =>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Faucibus interdum posuere lorem ipsum dolor sit amet. Purus in massa tempor nec feugiat nisl pretium. Neque sodales ut etiam sit amet nisl purus in. Mauris nunc congue nisi vitae suscipit tellus. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Velit egestas dui id ornare arcu. Consectetur lorem donec massa sapien faucibus et. Tincidunt eget nullam non nisi est sit amet. Pretium lectus quam id leo in vitae turpis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Habitant morbi tristique senectus et. Duis at consectetur lorem donec massa sapien faucibus. Ornare suspendisse sed nisi lacus sed viverra tellus in.", :user => u2, :product => p0
 r2 = Review.create :content =>"Not just good for forging, it's good for... other things.", :user => u4, :product => p4
-r3 = Review.create :content =>"I DON'T LIKE HOW BLUE IT IS!", :user => u1, :product => p2
+r3 = Review.create :content =>"IT'S NOT BLUE ENOUGH!", :user => u1, :product => p2
 r4 = Review.create :content =>"Is okay.", :user => u1, :product => p0
 r5 = Review.create :content =>"I like the red colour.", :user => u4, :product => p1
 puts "#{Review.count} reviews."
