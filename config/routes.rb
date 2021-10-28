@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'reviews/index'
-  get 'reviews/new'
-  get 'reviews/create'
   root :to =>  'pages#home'
 
   get 'carts/:id' => "carts#show", as: "cart"
