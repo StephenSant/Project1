@@ -1,30 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 body
 {
     margin: 0;
+    font-family: 'Merriweather', serif;
 }
 
 h1
 {
-    background-color: black;
+    background-color: rgb(0, 168, 50);
     padding: 15px;
     font-size: 55px;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 a 
-{
+{    
+    text-decoration: none;
     color:white;
 }
 
 a
 {
-    text-decoration: none;
     color:black;
+    text-decoration: none;
 }
 
 nav
 {
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(0, 0, 0);
     padding: 5px 15px;
     color:white;
     text-decoration: none;
@@ -55,36 +61,16 @@ td, th
     padding: 8px;
 }
 
-div.shop
+div.shop, div.product
 {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
     padding: 5px 10px;
     margin: 5px 0;
 }
 
-div.shop h3
-{
-    margin: 5px 0;
-}
-
-div.shop p
-{
-    margin: 5px 0;
-}
-
-div.product
-{
-    background-color: rgb(224, 224, 224);
-    padding: 5px 10px;
-    margin: 5px 0;
-}
-
-div.product h3
-{
-    margin: 5px 0;
-}
-
-div.product p
+div.shop h3, div.shop p, div.product h3, div.product p
 {
     margin: 5px 0;
 }
@@ -124,4 +110,9 @@ div.product_in_cart
     background-color: rgb(236, 236, 236);
     padding: 10px;
     margin: 10px 0;
+}
+
+.product_image
+{
+    margin-top: 10px;
 }

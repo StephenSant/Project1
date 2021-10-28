@@ -1,7 +1,7 @@
 <h2>Cart show</h2>
   <% @cart.line_items.each do |line_item| %>
   <div class="product_in_cart">
-    <b><%= line_item.product.name %> <span style="float: right"><%= number_to_currency(line_item.product.price) %></span></b>
+    <b><%= line_item.product.name %> <span style="float: right; font-size: 30px;"><%= number_to_currency(line_item.product.price) %></span></b>
       <div class="quantity">
         <span>Quantity:</span>
         <span><%= button_to "+", line_item_add_path(:id => line_item), method: :post %></span>
