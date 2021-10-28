@@ -1,5 +1,17 @@
-<h2><%= @product.product_name %></h2>
-<small>Created: <%=@product.created_at.day%>/<%=@product.created_at.month%>/<%=@product.created_at.year%></small>
+<h2><%= @product.name %> - <%= number_to_currency(@product.price) %></h2>
+<%= button_to "Add to cart", line_items_path(:product_id => @product.id), :method => "post" %>
 <p>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h3><%= link_to @product.shop.shop_name, ('/shops/'+(@product.shop.id).to_s) %></h3>
-<%= button_to "Add #{@product.product_name} to cart", line_items_path(:product_id => @product.id) %>
+<small>Created: <%=@product.created_at.day%>/<%=@product.created_at.month%>/<%=@product.created_at.year%></small><br>Product of <b><%= link_to @product.shop.name, ('/shops/'+(@product.shop.id).to_s) %></b>
+<h3>Reviews</h3>
+<% @product.reviews.each do |review|%>
+<div class="review">
+    <div>
+        <img src = 'https://via.placeholder.com/75'> 
+    </div>
+    <div>
+        <h4><%= review.user.username %></h4>
+        <p><%= review.content %></p>
+        <small>Posted: XX/XX/XXXX</small>
+    </div>
+</div>
+<% end %>

@@ -1,14 +1,10 @@
 <h2>New Product</h2>
 <%= form_for(@product) do |f| %>
   <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name, required: true, autofocus: true, placeholder: "Enter product name" %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true %><br>
+    <%= f.label :price %>
+    <%= f.number_field :price, step: 0.01, :required => true %><br>
   </p>
-  <p>
-    <%= f.label :price %><br>
-    <%= f.number_field :price, required: true %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+  <%= f.submit %>
 <% end %>

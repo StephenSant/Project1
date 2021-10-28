@@ -88,3 +88,40 @@ div.product p
 {
     margin: 5px 0;
 }
+
+div.review
+{
+    background-color: rgb(224, 224, 224);
+    padding: 0px;
+    margin: 5px 0;
+    display: flex;
+}
+div.review *
+{
+    margin:5px 1px;
+    padding: 0 5px;
+}
+
+div.review * *
+{
+    margin:0;
+    padding:0;
+}
+
+div.quantity
+{
+    width:200px;
+    height: 21px;
+}
+div.quantity *
+{
+    float:left;
+    margin: 0 1px;
+}
+
+div.product_in_cart
+{
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    margin: 10px 0;
+}

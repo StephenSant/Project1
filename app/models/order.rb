@@ -1,3 +1,4 @@
 class Order < ApplicationRecord
-    has_many :line_items, :dependent => :destroy
+    has_many :line_items, dependent: :destroy
+    belongs_to :user, :optional => true
 end

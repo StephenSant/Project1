@@ -1,0 +1,11 @@
+<%= form_for @product do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true,%>
+  <%= f.label :image %>
+  <%= f.url_field :image, :required => true,%>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  <%= f.label :category_id %>
+  <%= f.select :category_id, Category.pluck(:title, :id), :include_blank => true %>
+  <%= f.submit %>
+<% end %>
