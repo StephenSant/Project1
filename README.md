@@ -25,15 +25,15 @@ You can find the site at https://stephenprojecti.herokuapp.com/. All users passw
 - Products database
 - Reviews database
 - Styling
-- Cart
+- Cart 
+- Basic Search store function
+- Basic Search products function
 
 ## Future Features
 - Make new / delete stores
 - Make / delete reviews
 - Add users to store
 - Store admin
-- Search store function
-- Search products function
 
 ## Support
 For support, please do not contact me.
