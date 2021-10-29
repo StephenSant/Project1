@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.all
+    @products = Product.search(params[:search])
   end
   
   def new
@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
     @product.update(product_params)
     redirect_to products_path
   end
-  
+
   def destroy
     @product = Product.find(params[:id])
     @product.destroy

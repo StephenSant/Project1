@@ -1,4 +1,10 @@
 <h2>Featured Shops</h2>
+<%= form_tag shops_index_path, :method => 'get' do %>
+<p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search"%>
+</p>
+<% end %>
 <% @shops.each do |shop| %>
     <a href = <%= shop.id %>, class = 'shop'>
         <div class = 'shop'>

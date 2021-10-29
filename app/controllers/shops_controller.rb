@@ -3,7 +3,7 @@ class ShopsController < ApplicationController
   end
 
   def index
-    @shops = Shop.all
+    @shops = Shop.search(params[:search])
   end
 
   def show
