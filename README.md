@@ -4,8 +4,15 @@
 
 ## General Info
 In this project, I was to make a site which was make with 'Ruby on Rails' and feature multiple databases. This site is a prototype for an 'Ebay-like' online store/multiple stores.
+
 ## Setup and Use
-You can find the site at https://stephenprojecti.herokuapp.com/.
+You can find the site at https://stephenprojecti.herokuapp.com/. All users passwords are "chicken".
+### Premade Users
+- jim@mail.com (Admin)
+- joe@mail.com
+- james@mail.com
+- jane@mail.com
+- jess@mail.com
 
 ## Credit
 - Stephen Sant
