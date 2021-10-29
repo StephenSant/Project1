@@ -16,7 +16,7 @@ You can find the site at https://stephenprojecti.herokuapp.com/. All users passw
 
 ## Credit
 - Stephen Sant
-- Cart from [@HowardMann](https://github.com/howardmann/Tutorials/blob/master/Rails_Shopping_Cart.md) with help from [@KeithHoka](https://github.com/Keith-hoka/Project-1)
+- Cart from [@HowardMann](https://github.com/howardmann/Tutorials/blob/master/Rails_Shopping_Cart.md) with help from [@KeithHoka](https://github.com/Keith-hoka)
 - Images from I'm borrowing from the internet.
 
 ## Features
