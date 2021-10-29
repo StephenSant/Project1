@@ -29,7 +29,7 @@ You can find the site at https://stephenprojecti.herokuapp.com/. All users passw
 
 ## Future Features
 - Make new / delete stores
-- Make/delete reviews
+- Make / delete reviews
 - Add users to store
 - Store admin
 - Search store function
